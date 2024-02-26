@@ -95,8 +95,8 @@ def member_search_buku():
 
     else:
         print("buku tidak terdaftar. silahkan coba lagi")
-        konfirmasi = int(input("pilih:\n (1) lanjut Cari Buku\n (tombol lainnya) Kembali"))
-        if konfirmasi == 1:
+        konfirmasi = input("pilih:\n (1) lanjut Cari Buku\n (tombol lainnya) Kembali")
+        if konfirmasi == "1":
             member_search_buku()
         else: 
             Log_In_Member()
