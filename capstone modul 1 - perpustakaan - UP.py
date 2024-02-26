@@ -546,17 +546,14 @@ Jangan Lupa Cek Buku Rekomendasi Kita Hari Ini {today}:''')
           1. Admin
           2. Member
           3. Keluar''')
-    choice = int(input("Pilih:\n (1) Admin\n (2) Member\n (3) Keluar"))
+    choice = input("Pilih:\n (1) Admin\n (2) Member\n (3) Keluar")
 
-    if choice == 1:
+    if choice == "1":
         Log_In_Admin()
-    elif choice == 2:
+    elif choice == "2":
         Log_In_Member()
-    elif choice == 3:
+    else:
         print("terima kasih telah berkunjung ke Perpustakaan TanTan. Sampai jumpa dilain waktu")
         sys.exit() 
-    else:
-        print("Salah Input")
-        Main()
 
 Main()
